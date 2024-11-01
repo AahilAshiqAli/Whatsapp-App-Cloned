@@ -4,13 +4,15 @@ import { StatusBar } from "expo-status-bar";
 import Header from "./Header";
 import Navigation from "./Navigation";
 
-// i am navigating from a component that i have imported in Homescreen so definity navigation.navigate
-// would be called there so i would have to pass it as a prop to Header
+{
+  /* i am navigating from a component that i have imported in Homescreen so definity navigation.navigate
+would be called there so i would have to pass it as a prop to Header */
+}
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Header />
+      <Header navigation={navigation} />
       <View style={styles.container1}>
         <Navigation />
       </View>

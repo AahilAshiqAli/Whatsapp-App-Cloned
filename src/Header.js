@@ -6,13 +6,9 @@ import {
   MaterialCommunityIcons,
 } from "react-native-vector-icons";
 import { TouchableHighlight } from "react-native";
-import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
 
-const Header = () => {
+const Header = ({ navigation }) => {
   const [dropdownVisible, setDropDownVisible] = useState(false);
-
-  const Stack = createStackNavigator();
 
   const toggleDropdown = () => {
     setDropDownVisible(!dropdownVisible);
@@ -54,8 +50,6 @@ const Header = () => {
           </TouchableHighlight>
         </View>
       </View>
-
-      {/* Modal for Dropdown */}
       <Modal
         transparent={true}
         visible={dropdownVisible} // show if dropdown visible is true
