@@ -66,6 +66,20 @@ export default function SettingsScreen() {
         <MaterialCommunityIcons name="database" size={30} color="#a6b1b2" />
       ),
     },
+    {
+      id: "8",
+      title: "Notifications",
+      description: "Message, group & call tones",
+      icon: <Fontisto name="bell" size={30} color="#a6b1b2" />,
+    },
+    {
+      id: "9",
+      title: "Storage and data",
+      description: "Network usage, auto-download",
+      icon: (
+        <MaterialCommunityIcons name="database" size={30} color="#a6b1b2" />
+      ),
+    },
   ];
 
   const renderItem = ({ item }) => (
@@ -142,6 +156,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     marginRight: 16,
+    width: 40, // to make sure that every text component start from same position vertically
   },
   textContainer: {
     flex: 1,
