@@ -14,7 +14,7 @@ import {
   Fontisto,
 } from "react-native-vector-icons";
 
-export default function SettingsScreen() {
+export default function SettingsScreen({ navigation }) {
   const settingsData = [
     {
       id: "1",
@@ -102,17 +102,22 @@ export default function SettingsScreen() {
   return (
     <View style={styles.container}>
       {/* Header Section */}
-      <View style={styles.header}>
-        <Image
-          source={require("../../assets/Faces/002_a.png")}
-          style={styles.image}
-        />
-        <View style={styles.headerTextContainer}>
-          <Text style={styles.profileName}>Aahil Ashiq Ali</Text>
-          <Text style={styles.profileStatus}>Hey there! I am using...</Text>
+      <TouchableHighlight
+        activeOpacity={0.6}
+        underlayColor="#DDDDDD"
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <View style={styles.header}>
+          <Image
+            source={require("../../assets/Faces/002_a.png")}
+            style={styles.image}
+          />
+          <View style={styles.headerTextContainer}>
+            <Text style={styles.profileName}>Aahil Ashiq Ali</Text>
+            <Text style={styles.profileStatus}>Hey there! I am using...</Text>
+          </View>
         </View>
-      </View>
-
+      </TouchableHighlight>
       {/* Settings List */}
       <FlatList
         data={settingsData}

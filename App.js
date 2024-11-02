@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "./src/HomeScreen";
 import SettingsScreen from "./src/screens/Settings";
+import Profile from "./src/screens/Profile";
 
 // Stack Navigator definition
 const Stack = createStackNavigator();
@@ -17,6 +18,14 @@ function MyStack() {
         options={{ headerShown: false }}
       />
       <Stack.Screen name="Settings" component={SettingsScreen} />
+      <Stack.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          headerStyle: { backgroundColor: "#0e806a" },
+          headerTintColor: "#fff",
+        }}
+      />
     </Stack.Navigator>
   );
 }
