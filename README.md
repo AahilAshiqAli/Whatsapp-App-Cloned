@@ -17,6 +17,8 @@ A **React Native Expo** application that replicates the core interface and funct
 - Expo Vector Icons  
 - React Navigation
 
+## NOTE: There is no backend logic or usability login written
+
 ## 📦 Setup Instructions
 
 1. **Clone the repo**  
