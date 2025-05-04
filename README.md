@@ -23,13 +23,13 @@ A **React Native Expo** application that replicates the core interface and funct
 
 1. **Clone the repo**  
 ```bash
-git clone https://github.com/yourusername/whatsapp-clone-app.git
+git clone https://github.com/AahilAshiqAli/Whatsapp-App-Cloned.git
 ```
 
 2. **Navigate to the project**
 
 ```bash
-cd whatsapp-clone-app
+cd Whatsapp-App-Cloned
 ```
 
 3. **Install dependencies**
